@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css" />
+    <script src="javascript/main.js"></script>
+    <title>Calculadora</title>
+</head>
+
+<body>
+
+    <div class="calculadora">
+
+        <div class="cabecera">
+            <div class="logo">
+                <p><br></p>
+                <img src="img/logo.png" title="BUAP">
+            </div>
+            <div class="titulo">
+                <p><br>Calculadora</p>
+            </div>
+            <div class="datos">
+                <p>Datos</p>
+                <p>201858235 - Alcantar Perez Jose Luis</br>201804070 - Rodriguez Sanchez Eduardo</p>
+            </div>
+        </div>
+
+        <div class="cuerpo">
+
+            <div class="pantalla">
+                <input type="text" name="datos" placeholder="0" id="pantallaDatos">
+            </div>
+
+            <div class="teclado">
+                <!-- teclado calculadora -->
+                <button name="button" class="boton" onclick="agregar(this)" id="nueve">9</button>
+                <button name="button" class="boton" onclick="agregar(this)" id="ocho">8</button>
+                <button name="button" class="boton" onclick="agregar(this)" id="siete">7</button>
+                <button name="button" class="boton" onclick="agregar(this)" id="seis">6</button>
+                <button name="button" class="boton" onclick="agregar(this)" id="cinco">5</button>
+                <button name="button" class="boton" onclick="agregar(this)" id="cuatro">4</button>
+                <button name="button" class="boton" onclick="agregar(this)" id="tres">3</button>
+                <button name="button" class="boton" onclick="agregar(this)" id="dos">2</button>
+                <button name="button" class="boton" onclick="agregar(this)" id="uno">1</button>
+                <button name="button" class="boton" onclick="agregar(this)" id="punto">.</button>
+                <button name="button" class="boton" onclick="agregar(this)" id="cero">0</button>
+
+            </div>
+            <div class="operadores">
+                <button name="button" class="boton" onclick="agregar(this)" id="suma" title="Suma">+</button>
+                <button name="button" class="boton" onclick="agregar(this)" id="resta" title="Resta">-</button>
+                <button name="button" class="boton" onclick="agregar(this)" id="multiplicacion" title="Multiplicacion">*</button>
+                <button name="button" class="boton" onclick="agregar(this)" id="division" title="Division">/</button>
+                <button name="button" class="boton" onclick="agregar(this)" id="exponente" title="Potencia">^</button>
+                <button name="button" class="boton" onclick="limpiar()" id="eliminar" title="Limpiar">x</button>
+                <button name="button" class="boton" onclick="llamar()" id="fibonacci" title="Fibonacci">Fibonacci</button>
+                <button name="button" class="boton" onclick="igual()" id="igual" title="Resultado">=</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
